@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_263c6f739056c75c0aff8eeaa4acbe12 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_263c6f739056c75c0aff8eeaa4acbe12" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_263c6f739056c75c0aff8eeaa4acbe12 = L.map(
+                "map_263c6f739056c75c0aff8eeaa4acbe12",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9133e8844ddcda3cdf10f66f20a888f2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9133e8844ddcda3cdf10f66f20a888f2.addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            tile_layer_9133e8844ddcda3cdf10f66f20a888f2.addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var marker_b2a2b2b06dc981716a457b22c8cf9aa0 = L.marker(
+                [28.6517178, 77.2219388],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_8143127ecb84ccc159f54fe54a8a9733 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b2a2b2b06dc981716a457b22c8cf9aa0.setIcon(icon_8143127ecb84ccc159f54fe54a8a9733);
+        
+    
+        var popup_96e44cbb45d350ad1b49ad8e4a2ea8a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87ad7f5d97b2534e00b76d09e580c39e = $(`<div id="html_87ad7f5d97b2534e00b76d09e580c39e" style="width: 100.0%; height: 100.0%;">City: Delhi<br>AQI: 5 (Red Zone)<br>Coordinates: (28.6517178, 77.2219388)</div>`)[0];
+                popup_96e44cbb45d350ad1b49ad8e4a2ea8a8.setContent(html_87ad7f5d97b2534e00b76d09e580c39e);
+            
+        
+
+        marker_b2a2b2b06dc981716a457b22c8cf9aa0.bindPopup(popup_96e44cbb45d350ad1b49ad8e4a2ea8a8)
+        ;
+
+        
+    
+    
+            var marker_eb65a4a4f36d6fa2682947dccce4f47d = L.marker(
+                [30.7334421, 76.7797143],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_f485af6e100c37e1427118d7d4d7628a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_eb65a4a4f36d6fa2682947dccce4f47d.setIcon(icon_f485af6e100c37e1427118d7d4d7628a);
+        
+    
+        var popup_f3a8420f0d9653f10d8b49ded699d4d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4d3491f652a9e7f6bb2d0a0dad8dce2 = $(`<div id="html_e4d3491f652a9e7f6bb2d0a0dad8dce2" style="width: 100.0%; height: 100.0%;">City: Chandigarh<br>AQI: 5 (Red Zone)<br>Coordinates: (30.7334421, 76.7797143)</div>`)[0];
+                popup_f3a8420f0d9653f10d8b49ded699d4d4.setContent(html_e4d3491f652a9e7f6bb2d0a0dad8dce2);
+            
+        
+
+        marker_eb65a4a4f36d6fa2682947dccce4f47d.bindPopup(popup_f3a8420f0d9653f10d8b49ded699d4d4)
+        ;
+
+        
+    
+    
+            var marker_f7192702cce482f7c824d09257d6e53a = L.marker(
+                [30.3255646, 78.0436813],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_e4ffd3ae56529e7d91a2e1e1eab4218b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f7192702cce482f7c824d09257d6e53a.setIcon(icon_e4ffd3ae56529e7d91a2e1e1eab4218b);
+        
+    
+        var popup_0f15db5dcd5cd53eb178d330c805928e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e47d4fa88f16c257f39804caaa73c04d = $(`<div id="html_e47d4fa88f16c257f39804caaa73c04d" style="width: 100.0%; height: 100.0%;">City: Dehradun<br>AQI: 4 (Red Zone)<br>Coordinates: (30.3255646, 78.0436813)</div>`)[0];
+                popup_0f15db5dcd5cd53eb178d330c805928e.setContent(html_e47d4fa88f16c257f39804caaa73c04d);
+            
+        
+
+        marker_f7192702cce482f7c824d09257d6e53a.bindPopup(popup_0f15db5dcd5cd53eb178d330c805928e)
+        ;
+
+        
+    
+    
+            var marker_0a0f279d4216bbc8871edb8ad5328e07 = L.marker(
+                [26.8381, 80.9346001],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_14d94fad9c7f4297029487e63ac50bcc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0a0f279d4216bbc8871edb8ad5328e07.setIcon(icon_14d94fad9c7f4297029487e63ac50bcc);
+        
+    
+        var popup_3cd94c8707ccd28bed9e5cd64f4e7fd9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_120629593cfe48788b95546bc4b85ae6 = $(`<div id="html_120629593cfe48788b95546bc4b85ae6" style="width: 100.0%; height: 100.0%;">City: Lucknow<br>AQI: 5 (Red Zone)<br>Coordinates: (26.8381, 80.9346001)</div>`)[0];
+                popup_3cd94c8707ccd28bed9e5cd64f4e7fd9.setContent(html_120629593cfe48788b95546bc4b85ae6);
+            
+        
+
+        marker_0a0f279d4216bbc8871edb8ad5328e07.bindPopup(popup_3cd94c8707ccd28bed9e5cd64f4e7fd9)
+        ;
+
+        
+    
+    
+            var marker_304d6248c4f6c2df8cfe44f2a784f0f9 = L.marker(
+                [26.9154576, 75.8189817],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_6d25d7585d8515cd1b72ab78f0678f52 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_304d6248c4f6c2df8cfe44f2a784f0f9.setIcon(icon_6d25d7585d8515cd1b72ab78f0678f52);
+        
+    
+        var popup_b7779efc39c465384612ed3d4d9f2346 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_154a2c1d0fa4580a079f60190bae4e38 = $(`<div id="html_154a2c1d0fa4580a079f60190bae4e38" style="width: 100.0%; height: 100.0%;">City: Jaipur<br>AQI: 5 (Red Zone)<br>Coordinates: (26.9154576, 75.8189817)</div>`)[0];
+                popup_b7779efc39c465384612ed3d4d9f2346.setContent(html_154a2c1d0fa4580a079f60190bae4e38);
+            
+        
+
+        marker_304d6248c4f6c2df8cfe44f2a784f0f9.bindPopup(popup_b7779efc39c465384612ed3d4d9f2346)
+        ;
+
+        
+    
+    
+            var marker_e6bbe42daa15ea926acbddcebe09e6c0 = L.marker(
+                [21.2380912, 81.6336993],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_bc0d5b9c2702ab6bad852896bebe4869 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e6bbe42daa15ea926acbddcebe09e6c0.setIcon(icon_bc0d5b9c2702ab6bad852896bebe4869);
+        
+    
+        var popup_bc31674ae336ee1ee4af70065eb82356 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6191c85b9528ada42d22722d259f2ba = $(`<div id="html_e6191c85b9528ada42d22722d259f2ba" style="width: 100.0%; height: 100.0%;">City: Raipur<br>AQI: 5 (Red Zone)<br>Coordinates: (21.2380912, 81.6336993)</div>`)[0];
+                popup_bc31674ae336ee1ee4af70065eb82356.setContent(html_e6191c85b9528ada42d22722d259f2ba);
+            
+        
+
+        marker_e6bbe42daa15ea926acbddcebe09e6c0.bindPopup(popup_bc31674ae336ee1ee4af70065eb82356)
+        ;
+
+        
+    
+    
+            var marker_9e6285b6cc5667901ff553c26f850d27 = L.marker(
+                [19.0785451, 72.878176],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_60772f8750455d580b76a5466981869b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9e6285b6cc5667901ff553c26f850d27.setIcon(icon_60772f8750455d580b76a5466981869b);
+        
+    
+        var popup_a6818cc8835131bac1ced62d331a5cae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59aa1eef7b82cea5ce5e44f43151edc3 = $(`<div id="html_59aa1eef7b82cea5ce5e44f43151edc3" style="width: 100.0%; height: 100.0%;">City: Mumbai<br>AQI: 5 (Red Zone)<br>Coordinates: (19.0785451, 72.878176)</div>`)[0];
+                popup_a6818cc8835131bac1ced62d331a5cae.setContent(html_59aa1eef7b82cea5ce5e44f43151edc3);
+            
+        
+
+        marker_9e6285b6cc5667901ff553c26f850d27.bindPopup(popup_a6818cc8835131bac1ced62d331a5cae)
+        ;
+
+        
+    
+    
+            var marker_2e316e2efa2764787b6f9e685e2c2e3e = L.marker(
+                [23.0216238, 72.5797068],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_6f14a35e2ddf12863634a57bbf3758ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2e316e2efa2764787b6f9e685e2c2e3e.setIcon(icon_6f14a35e2ddf12863634a57bbf3758ea);
+        
+    
+        var popup_529bacb8e1829a8b2534b4cb0bb4168d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_262aa2021ca624ec1728c29cf7039912 = $(`<div id="html_262aa2021ca624ec1728c29cf7039912" style="width: 100.0%; height: 100.0%;">City: Ahmedabad<br>AQI: 5 (Red Zone)<br>Coordinates: (23.0216238, 72.5797068)</div>`)[0];
+                popup_529bacb8e1829a8b2534b4cb0bb4168d.setContent(html_262aa2021ca624ec1728c29cf7039912);
+            
+        
+
+        marker_2e316e2efa2764787b6f9e685e2c2e3e.bindPopup(popup_529bacb8e1829a8b2534b4cb0bb4168d)
+        ;
+
+        
+    
+    
+            var marker_bc1c39e1b6cba0723110c4cf99f5b505 = L.marker(
+                [18.521428, 73.8544541],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_bf9e6ac2aaf8fd6b6ca46a0fd8d8270b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bc1c39e1b6cba0723110c4cf99f5b505.setIcon(icon_bf9e6ac2aaf8fd6b6ca46a0fd8d8270b);
+        
+    
+        var popup_5bce91a3a50a2c41de3c594d70c4a384 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_107aec620c8e9daeec50c086b70350d7 = $(`<div id="html_107aec620c8e9daeec50c086b70350d7" style="width: 100.0%; height: 100.0%;">City: Pune<br>AQI: 5 (Red Zone)<br>Coordinates: (18.521428, 73.8544541)</div>`)[0];
+                popup_5bce91a3a50a2c41de3c594d70c4a384.setContent(html_107aec620c8e9daeec50c086b70350d7);
+            
+        
+
+        marker_bc1c39e1b6cba0723110c4cf99f5b505.bindPopup(popup_5bce91a3a50a2c41de3c594d70c4a384)
+        ;
+
+        
+    
+    
+            var marker_c2336e5f5cc34585eb112e34f5222e77 = L.marker(
+                [15.4989946, 73.8282141],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_547c5905e0fbe9139b73f6e7e5f52758 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c2336e5f5cc34585eb112e34f5222e77.setIcon(icon_547c5905e0fbe9139b73f6e7e5f52758);
+        
+    
+        var popup_c7fe7ee160e6d30bc73d2e43b6fc14fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_995984538e333d168c439f876dcd1f34 = $(`<div id="html_995984538e333d168c439f876dcd1f34" style="width: 100.0%; height: 100.0%;">City: Panaji<br>AQI: 4 (Red Zone)<br>Coordinates: (15.4989946, 73.8282141)</div>`)[0];
+                popup_c7fe7ee160e6d30bc73d2e43b6fc14fd.setContent(html_995984538e333d168c439f876dcd1f34);
+            
+        
+
+        marker_c2336e5f5cc34585eb112e34f5222e77.bindPopup(popup_c7fe7ee160e6d30bc73d2e43b6fc14fd)
+        ;
+
+        
+    
+    
+            var marker_ebd608746b526c0a31b99d1111f7a1e4 = L.marker(
+                [12.9767936, 77.590082],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_a6612cb19a153416e717fad40f357b58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ebd608746b526c0a31b99d1111f7a1e4.setIcon(icon_a6612cb19a153416e717fad40f357b58);
+        
+    
+        var popup_71c7e2db91c6648ccdc383b592c30be0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_737186df2693c37a99e4d61a6579afa6 = $(`<div id="html_737186df2693c37a99e4d61a6579afa6" style="width: 100.0%; height: 100.0%;">City: Bangalore<br>AQI: 4 (Red Zone)<br>Coordinates: (12.9767936, 77.590082)</div>`)[0];
+                popup_71c7e2db91c6648ccdc383b592c30be0.setContent(html_737186df2693c37a99e4d61a6579afa6);
+            
+        
+
+        marker_ebd608746b526c0a31b99d1111f7a1e4.bindPopup(popup_71c7e2db91c6648ccdc383b592c30be0)
+        ;
+
+        
+    
+    
+            var marker_384f4359c308c333bb335d397f2113c3 = L.marker(
+                [13.0836939, 80.270186],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_d3e2c0c4d1574e3c31f6e9df6a2db6af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_384f4359c308c333bb335d397f2113c3.setIcon(icon_d3e2c0c4d1574e3c31f6e9df6a2db6af);
+        
+    
+        var popup_3fbfd3b63a111dde5c0cfba3aee6e6ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c0fc3fb574b07d71b7a3cab1bdd1e7d = $(`<div id="html_2c0fc3fb574b07d71b7a3cab1bdd1e7d" style="width: 100.0%; height: 100.0%;">City: Chennai<br>AQI: 5 (Red Zone)<br>Coordinates: (13.0836939, 80.270186)</div>`)[0];
+                popup_3fbfd3b63a111dde5c0cfba3aee6e6ec.setContent(html_2c0fc3fb574b07d71b7a3cab1bdd1e7d);
+            
+        
+
+        marker_384f4359c308c333bb335d397f2113c3.bindPopup(popup_3fbfd3b63a111dde5c0cfba3aee6e6ec)
+        ;
+
+        
+    
+    
+            var marker_f034b482879c480f306fead2d2eb83c0 = L.marker(
+                [17.360589, 78.4740613],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_e99e5ed7edd3d4a8da1d1397b7f057f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f034b482879c480f306fead2d2eb83c0.setIcon(icon_e99e5ed7edd3d4a8da1d1397b7f057f0);
+        
+    
+        var popup_09ac3dcc33048f11a470b085f54a6a6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06457f5f23bf67fdf8535728bae8ac2e = $(`<div id="html_06457f5f23bf67fdf8535728bae8ac2e" style="width: 100.0%; height: 100.0%;">City: Hyderabad<br>AQI: 5 (Red Zone)<br>Coordinates: (17.360589, 78.4740613)</div>`)[0];
+                popup_09ac3dcc33048f11a470b085f54a6a6d.setContent(html_06457f5f23bf67fdf8535728bae8ac2e);
+            
+        
+
+        marker_f034b482879c480f306fead2d2eb83c0.bindPopup(popup_09ac3dcc33048f11a470b085f54a6a6d)
+        ;
+
+        
+    
+    
+            var marker_bc16a6a903fb04ad0d8e8122da1cbba5 = L.marker(
+                [22.5414185, 88.35769124388872],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_3e262c991cb8a3f4eecf774d04cb267e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bc16a6a903fb04ad0d8e8122da1cbba5.setIcon(icon_3e262c991cb8a3f4eecf774d04cb267e);
+        
+    
+        var popup_754a3226a56270fa69838241bbf25928 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f9f9232f8f9b786fa4f194a4ffbb6c6 = $(`<div id="html_7f9f9232f8f9b786fa4f194a4ffbb6c6" style="width: 100.0%; height: 100.0%;">City: Kolkata<br>AQI: 5 (Red Zone)<br>Coordinates: (22.5414185, 88.35769124388872)</div>`)[0];
+                popup_754a3226a56270fa69838241bbf25928.setContent(html_7f9f9232f8f9b786fa4f194a4ffbb6c6);
+            
+        
+
+        marker_bc16a6a903fb04ad0d8e8122da1cbba5.bindPopup(popup_754a3226a56270fa69838241bbf25928)
+        ;
+
+        
+    
+    
+            var marker_642bb804ad094ec1810a188bb3ba46d6 = L.marker(
+                [20.2602964, 85.8394521],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_a497243d3a9c5321a3d0d2ae3284323c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_642bb804ad094ec1810a188bb3ba46d6.setIcon(icon_a497243d3a9c5321a3d0d2ae3284323c);
+        
+    
+        var popup_1e3fb32ef41b5fc65bee28898bad8597 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58817063080981d886fa2d0e8c0cfdc3 = $(`<div id="html_58817063080981d886fa2d0e8c0cfdc3" style="width: 100.0%; height: 100.0%;">City: Bhubaneswar<br>AQI: 5 (Red Zone)<br>Coordinates: (20.2602964, 85.8394521)</div>`)[0];
+                popup_1e3fb32ef41b5fc65bee28898bad8597.setContent(html_58817063080981d886fa2d0e8c0cfdc3);
+            
+        
+
+        marker_642bb804ad094ec1810a188bb3ba46d6.bindPopup(popup_1e3fb32ef41b5fc65bee28898bad8597)
+        ;
+
+        
+    
+    
+            var marker_1755135ec6814358054a0db57fd76d80 = L.marker(
+                [23.3700501, 85.3250387],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_9d2e9f01c60e2350e408f95d29448c01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1755135ec6814358054a0db57fd76d80.setIcon(icon_9d2e9f01c60e2350e408f95d29448c01);
+        
+    
+        var popup_6e89a53fe5d59f372f4fdb415a44de38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8de218b54a0842ae8f8a956d11e198a8 = $(`<div id="html_8de218b54a0842ae8f8a956d11e198a8" style="width: 100.0%; height: 100.0%;">City: Ranchi<br>AQI: 5 (Red Zone)<br>Coordinates: (23.3700501, 85.3250387)</div>`)[0];
+                popup_6e89a53fe5d59f372f4fdb415a44de38.setContent(html_8de218b54a0842ae8f8a956d11e198a8);
+            
+        
+
+        marker_1755135ec6814358054a0db57fd76d80.bindPopup(popup_6e89a53fe5d59f372f4fdb415a44de38)
+        ;
+
+        
+    
+    
+            var marker_7e9ebfa7dbb2aae89f4c8c215f336f50 = L.marker(
+                [25.6093239, 85.1235252],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_2567b235ff1c09b7e35115ee567e8624 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7e9ebfa7dbb2aae89f4c8c215f336f50.setIcon(icon_2567b235ff1c09b7e35115ee567e8624);
+        
+    
+        var popup_a20f7339228e1d96804b3ca50c36b90b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d6886cbc73ae128b6337823312f04f0 = $(`<div id="html_0d6886cbc73ae128b6337823312f04f0" style="width: 100.0%; height: 100.0%;">City: Patna<br>AQI: 5 (Red Zone)<br>Coordinates: (25.6093239, 85.1235252)</div>`)[0];
+                popup_a20f7339228e1d96804b3ca50c36b90b.setContent(html_0d6886cbc73ae128b6337823312f04f0);
+            
+        
+
+        marker_7e9ebfa7dbb2aae89f4c8c215f336f50.bindPopup(popup_a20f7339228e1d96804b3ca50c36b90b)
+        ;
+
+        
+    
+    
+            var marker_d4e55fad531f5c1958993be22080581e = L.marker(
+                [26.1805978, 91.753943],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_c16aef346347a83de2fdb9a1985ddb2d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d4e55fad531f5c1958993be22080581e.setIcon(icon_c16aef346347a83de2fdb9a1985ddb2d);
+        
+    
+        var popup_36a88e07e13ab18349d61d71768fcaf8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf227d21ed547b0c4c3a884a05b1de86 = $(`<div id="html_bf227d21ed547b0c4c3a884a05b1de86" style="width: 100.0%; height: 100.0%;">City: Guwahati<br>AQI: 5 (Red Zone)<br>Coordinates: (26.1805978, 91.753943)</div>`)[0];
+                popup_36a88e07e13ab18349d61d71768fcaf8.setContent(html_bf227d21ed547b0c4c3a884a05b1de86);
+            
+        
+
+        marker_d4e55fad531f5c1958993be22080581e.bindPopup(popup_36a88e07e13ab18349d61d71768fcaf8)
+        ;
+
+        
+    
+    
+            var marker_a939406ed89ca82e043008567776f9f9 = L.marker(
+                [23.8312377, 91.2823821],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_4181b7bde3e06be9855ce1ffd22fde19 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a939406ed89ca82e043008567776f9f9.setIcon(icon_4181b7bde3e06be9855ce1ffd22fde19);
+        
+    
+        var popup_5cd2fd78589df07b6f2a2ca3349fe2c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd58ebbc28ce5c62f5f84c0f6db4d788 = $(`<div id="html_bd58ebbc28ce5c62f5f84c0f6db4d788" style="width: 100.0%; height: 100.0%;">City: Agartala<br>AQI: 4 (Red Zone)<br>Coordinates: (23.8312377, 91.2823821)</div>`)[0];
+                popup_5cd2fd78589df07b6f2a2ca3349fe2c8.setContent(html_bd58ebbc28ce5c62f5f84c0f6db4d788);
+            
+        
+
+        marker_a939406ed89ca82e043008567776f9f9.bindPopup(popup_5cd2fd78589df07b6f2a2ca3349fe2c8)
+        ;
+
+        
+    
+    
+            var marker_b9508c610321d5201316f9cafd2cd16a = L.marker(
+                [20.42000485, 72.86376290300566],
+                {
+}
+            ).addTo(map_263c6f739056c75c0aff8eeaa4acbe12);
+        
+    
+            var icon_53f77f59501d48d7dc89d8b833177319 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b9508c610321d5201316f9cafd2cd16a.setIcon(icon_53f77f59501d48d7dc89d8b833177319);
+        
+    
+        var popup_19ef24850dbfa3c0ba49eabaf10a2ed1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0354aaeff80ed15bb96ebe30aa89bf87 = $(`<div id="html_0354aaeff80ed15bb96ebe30aa89bf87" style="width: 100.0%; height: 100.0%;">City: Daman<br>AQI: 5 (Red Zone)<br>Coordinates: (20.42000485, 72.86376290300566)</div>`)[0];
+                popup_19ef24850dbfa3c0ba49eabaf10a2ed1.setContent(html_0354aaeff80ed15bb96ebe30aa89bf87);
+            
+        
+
+        marker_b9508c610321d5201316f9cafd2cd16a.bindPopup(popup_19ef24850dbfa3c0ba49eabaf10a2ed1)
+        ;
+
+        
+    
+</script>
+</html>
